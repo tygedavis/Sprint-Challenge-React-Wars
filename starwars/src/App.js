@@ -1,6 +1,14 @@
 import React from 'react';
 import CharacterList from './components/CharacterList'
 import './App.css';
+import styled from 'styled-components'
+
+const BodyDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,16 +19,14 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="parentDiv">
+    <BodyDiv>
       <div className="App">
         <h1 className="Header">React Wars</h1>
       </div>
-      <div className="character_div">
+      <div>
         <CharacterList/>
-        <h2>Name</h2>
-        <h3>Birth Year</h3>
       </div>
-    </div>
+    </BodyDiv>
   );
 }
 
