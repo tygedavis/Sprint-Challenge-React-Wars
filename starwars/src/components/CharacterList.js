@@ -13,8 +13,7 @@ const CharacterListDiv = styled.div`
 `;
 
 const Buttons = styled.button`
-    background-color: darkgray;
-    color: white;
+    background-color: white;
     border: 2px solid black;
 `;
 
