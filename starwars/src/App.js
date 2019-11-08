@@ -1,4 +1,5 @@
 import React from 'react';
+import CharacterList from './components/CharacterList'
 import './App.css';
 
 const App = () => {
@@ -10,8 +11,15 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <div className="parentDiv">
+      <div className="App">
+        <h1 className="Header">React Wars</h1>
+      </div>
+      <div className="character_div">
+        <CharacterList/>
+        <h2>Name</h2>
+        <h3>Birth Year</h3>
+      </div>
     </div>
   );
 }
